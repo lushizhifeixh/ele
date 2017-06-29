@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>自定义饿了么项目</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<script src="rem.js"></script>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="reset.css" />
+	<!-- <link rel="stylesheet" href="swiper-3.4.2.min.css" /> -->
+</head>
+<body>
+	<div class="section" id="address">
+		<h4><a href="#rlist">地址搜索页</a></h4>
+		<input type="text" id="keyword"/>
+		<!-- <button id="ele_search">饿了么搜索</button> -->
+		<ul id="list"></ul>
+	</div>
+	<div class="section" id="rlist">
+		<a href="#detail">商家列表页</a>
+		<!-- <div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="" alt="" />
+				</div>
+				<div class="swiper-slide">Slide 2</div>
+   		    </div>
+   		    <div class="swiper-pagination"></div>
+		</div> -->
+		<div class="swipe" id="mySwipe">
+			<div class="swipe-wrap">
+			    <div class="item" style="height:200px;background: blue">
+			        第一个板块
+			    </div>
+			    <div class="item" style="height:200px;background: red">
+			        第二个板块
+			    </div>
+			</div>
+			<ul id="position" class="hidden">
+			    <li class="cur"></li>
+			    <li style="margin-left:-5px"></li>
+			</ul>
+		</div>
+		<ul id="list_wrap"></ul>
+	</div>
+	<div class="section" id="detail">
+		<a href="#search">食物详情页</a>
+	</div>
+	<div class="section" id="search">
+		<a href="#detail">商家搜索页</a>
+
+	</div>
+	<script src="zepto.js"></script>
+	<script src="swipe.js"></script>
+	<script src="module/addressModule.js"></script>
+	<script src="module/detailModule.js"></script>
+	<script src="module/rlistModule.js"></script>
+	<script src="index.js"></script>
+	<!-- <script src="swiper-3.4.2.jquery.min.js" ></script>
+	<script type="text/javascript">
+
+		var mySwiper = new Swiper ('.swiper-container', {
+		   direction: 'horizontal',
+		   loop: true,
+		   autoplay:true,		   
+		   // 如果需要分页器
+		   pagination: '.swiper-pagination',
+		 })        
+	</script> -->
+	
+</body>
+</html>
